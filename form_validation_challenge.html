@@ -22,34 +22,40 @@
                 </p>
 
                 <p>Country:
-                    <input type="text" name="country" placeholder="Required">
+                    <select name="country" form="country">
+                    <option value="Please select a country">(Please select a Country)</option>
+                    <font color="red">Required. Must select a country</font>
                 </p>
 
                 <p>Zip Code:
-                    <input type="text" name="country" placeholder="Required">
+                    <input type="text" name="" placeholder="Required.">
                 </p>
 
                 <p>Email:
-                    <input type="email" name="email" placeholder="Required">
+                    <input type="email" name="email" placeholder="">
                 </p>
 
                 <p>Sex:
-                   Male
-                    <input type="radio" name="" placeholder="Required">
-                   Female
-                    <input type="radio" name="" placeholder="Required">
+                   
+                    <input type="radio" name="" placeholder="">
+                    Male
+                    <input type="radio" name="" placeholder="">
+                    Female
+                    <font color="red">Required.</font>
                 </p>
 
                 <p>Language:
+                    
+                    <input type="checkbox" name="" value="">
                     English
+                    
                     <input type="checkbox" name="" value="">
                     None English
-                    <input type="checkbox" name="" value="">
-                    <font color="red">Required</font>
+                    <font color="red">Required.</font>
                 </p>
                 <p>
                     About:
-                    <textarea name="" id="" cols="30" rows="10">Optional</textarea>
+                    <textarea name="" id="" cols="30" font color="red"rows="10">Optional</textarea></font>
                 </p>
 
                 <input type="Submit" name="submit" value="Submit">
