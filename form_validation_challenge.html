@@ -1,64 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>form_validation_challenge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-    <center><h1>Registration Form</h1>
-     
-                <p>User id:
-                    <input type="text" name="id" value="" placeholder="Required">
-                </p>
+   <form>
+        <center>
+            <h1>Registration Form</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>User id:</td>
+                            <td><input type="text" name="id" value="" placeholder="Required" required minlength="5" maxlength="12"></td>
+                        </tr>
 
-                <p>Password:
-                    <input type="text" name="password" placeholder="Required">
-                </p>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password"  placeholder="Required" required minlength="7" maxlength="12"></td>
+                        </tr>
 
-                <p>Name:
-                    <input type="text" name="name" placeholder="Required">
-                </p>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" name="name" placeholder="Required" tile=""></td>
+                        </tr>
 
-                <p>Country:
-                    <select name="country" form="country">
-                    <option value="Please select a country">(Please select a Country)</option>
-                    <font color="red">Required. Must select a country</font>
-                </p>
+                        <tr>
+                            <td>Country:</td>
+                            <td><select name="country" form="country">
+                                <option value="">(Please select a Country)</option>
+                                <option value="">South Africa</option>
+                                <option value="">China</option>
+                                <option value="">Mexico</option>
+                                <option value="">Brazil</option></td>
+                        </tr>
 
-                <p>Zip Code:
-                    <input type="text" name="" placeholder="Required.">
-                </p>
+                        <tr>
+                            <td>Zip Code:</td>
+                            <td><input type="text" name="" placeholder="Required."></td>
+                        </tr>
 
-                <p>Email:
-                    <input type="email" name="email" placeholder="">
-                </p>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" name="email" placeholder="Required valid email"></td>
+                        </tr>
 
-                <p>Sex:
-                   
-                    <input type="radio" name="" placeholder="">
-                    Male
-                    <input type="radio" name="" placeholder="">
-                    Female
-                    <font color="red">Required.</font>
-                </p>
+                        <tr>
+                            <td>Sex:</td>
+                            <td><input type="radio" name="" placeholder="">
+                            Male</td>
+                            <td><input type="radio" name="" placeholder="">
+                            Female</td>
+                            <td><font color="red">Required.</font></td>
+                        </tr>
 
-                <p>Language:
-                    
-                    <input type="checkbox" name="" value="">
-                    English
-                    
-                    <input type="checkbox" name="" value="">
-                    None English
-                    <font color="red">Required.</font>
-                </p>
-                <p>
-                    About:
-                    <textarea name="" id="" cols="30" font color="red"rows="10">Optional</textarea></font>
-                </p>
+                        <tr>
+                            <td>Language:</td>
+                            <td><input type="checkbox" name="" value="">
+                            English</td>
+                            <td><input type="checkbox" name="" value="">
+                            None English</td>
+                            <td><font color="red">Required.</font></td>
+                        </tr>
 
-                <input type="Submit" name="submit" value="Submit">
-    </center>
-</body>
+                        <tr>
+                            <td>About:</td>
+                            <td><textarea name="" id="" cols="30" font color="red" rows="10">Optional</textarea></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" name="" value="Submit"></td>
+                        </tr>
+                </tbody>    
+            </table>
+        </center>
+    </form> 
+</body> 
 </html>
